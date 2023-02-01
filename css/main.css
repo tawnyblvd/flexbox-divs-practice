@@ -105,12 +105,17 @@ body {
   padding: 2em;
   font-size: 1.25em;
   height: 100%;
+  background-color: black;
+  color: #fff;
+  margin: 0 auto;
 }
 
 .wrapper {
   display: flex;
   justify-content: space-between;
-  font-weight: 700;
+  /* font-weight: 700; */
+  border-top: 2px solid darkgray;
+  border-bottom: 2px solid darkgray;
 }
 
 .div-1,
@@ -119,12 +124,24 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
-  line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
+  /* line-height: 1.5em; */
+  /* font-size: 1.6em; */
   width: 30%;
   height: 300px;
+  /* below is mine */
+  text-align: justify;
+}
+
+span {
+  display: contents;
+  font-weight: bold;
+}
+
+.vertical-line {
+  display: flex;
+  border-right: 1px solid darkgray;
+  height: 200px;
+  align-self: center;
 }
 
 /* ==========================================================================
