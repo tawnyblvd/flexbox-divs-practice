@@ -108,6 +108,7 @@ body {
   background-color: black;
   color: #fff;
   margin: 0 auto;
+  max-width: 1200px;
 }
 
 .wrapper {
@@ -128,7 +129,6 @@ body {
   /* font-size: 1.6em; */
   width: 30%;
   height: 300px;
-  /* below is mine */
   text-align: justify;
 }
 
@@ -305,5 +305,35 @@ span {
   h2,
   h3 {
     page-break-after: avoid;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .div-1,
+  .div-2,
+  .div-3 {
+    width: 75%;
+    height: fit-content;
+    margin-bottom: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .div-1,
+  .div-2 {
+    border-bottom: 1px solid darkgray;
+  }
+
+  .vertical-line {
+    display: flex;
+    flex-direction: row;
+    border-right: none;
+    margin: 0;
+    padding: 0;
+    height: 0;
   }
 }
